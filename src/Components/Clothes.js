@@ -3,27 +3,14 @@ import { Query } from "react-apollo";
 import { Link } from "react-router-dom";
 import { allProducts } from "./Products";
 import "../Styles/Products.css";
+import Loading from "./Common/Loading";
 
 export class Clothes extends Component {
   render() {
     return (
       <Query query={allProducts}>
         {({ data, loading = false, error }) => {
-          if (loading)
-            return (
-              <div
-                style={{
-                  position: "absolute",
-                  top: "45%",
-                  left: "47%",
-                }}
-              >
-                <div style={{ textAlign: "center" }}>
-                  <span className="loader"></span>
-                  <p>Loading ...</p>
-                </div>
-              </div>
-            );
+          if (loading) return <Loading />;
           if (error) return <p>Something went wrong</p>;
 
           return (
