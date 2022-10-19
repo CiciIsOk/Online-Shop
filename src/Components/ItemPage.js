@@ -2,7 +2,7 @@ import { Component } from "react";
 
 export class ItemPage extends Component {
   render() {
-    return <div>ItemPage</div>;
+    return <div style={{ padding: "50px", margin: "20px" }}>ItemPage</div>;
   }
 }
 
