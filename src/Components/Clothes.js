@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { allProducts } from "./Products";
 import "../Styles/Products.css";
 import Loading from "./Common/Loading";
+import Error from "./Common/Error";
 
 export class Clothes extends Component {
   render() {
@@ -11,7 +12,7 @@ export class Clothes extends Component {
       <Query query={allProducts}>
         {({ data, loading = false, error }) => {
           if (loading) return <Loading />;
-          if (error) return <p>Something went wrong</p>;
+          if (error) return <Error />;
 
           return (
             <div

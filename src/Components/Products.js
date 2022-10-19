@@ -4,6 +4,7 @@ import { Query } from "react-apollo";
 import { Link } from "react-router-dom";
 import "../Styles/Products.css";
 import Loading from "./Common/Loading";
+import Error from "./Common/Error";
 
 export const allProducts = gql`
   {
@@ -28,7 +29,7 @@ export class Products extends Component {
       <Query query={allProducts}>
         {({ data, loading = false, error }) => {
           if (loading) return <Loading />;
-          if (error) return <p>Something went wrong</p>;
+          if (error) return <Error />;
 
           return (
             <div
