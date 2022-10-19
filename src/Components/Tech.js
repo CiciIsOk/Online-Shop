@@ -11,7 +11,18 @@ export class Tech extends Component {
         {({ data, loading = false, error }) => {
           if (loading)
             return (
-              <h1 style={{ padding: "50px", margin: "50px" }}>Loading...</h1>
+              <div
+                style={{
+                  position: "absolute",
+                  top: "45%",
+                  left: "47%",
+                }}
+              >
+                <div style={{ textAlign: "center" }}>
+                  <span className="loader"></span>
+                  <p>Loading ...</p>
+                </div>
+              </div>
             );
           if (error) return <p>Something went wrong</p>;
 
