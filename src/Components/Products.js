@@ -1,27 +1,10 @@
 import React, { Component } from "react";
-import gql from "graphql-tag";
 import { Query } from "react-apollo";
 import "../Styles/Products.css";
 import Loading from "./Common/Loading";
 import Error from "./Common/Error";
 import ProductDisplay from "./Common/ProductDisplay";
-
-export const allProducts = gql`
-  {
-    category {
-      products {
-        id
-        name
-        gallery
-        category
-        description
-        prices {
-          amount
-        }
-      }
-    }
-  }
-`;
+import { allProducts } from "../Containers/AllProductsContainer";
 
 export class Products extends Component {
   render() {

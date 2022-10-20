@@ -8,7 +8,7 @@ export class ProductsContainer extends Component {
       <div className="product-card">
         <img className="image" src={this.props.gallery} />
         <div className="item-details">
-          <Link to="/item/:id" class="item-details card-btn ">
+          <Link to="/item" class="item-details card-btn ">
             <svg
               width="24"
               height="24"

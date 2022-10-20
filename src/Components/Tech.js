@@ -3,8 +3,8 @@ import { Query } from "react-apollo";
 import "../Styles/Products.css";
 import Loading from "./Common/Loading";
 import Error from "./Common/Error";
-import { allProducts } from "./Products";
 import ProductDisplay from "./Common/ProductDisplay";
+import { allProducts } from "../Containers/AllProductsContainer";
 
 export class Tech extends Component {
   render() {
