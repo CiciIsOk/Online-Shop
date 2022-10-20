@@ -1,11 +1,11 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import { Routes, Route } from "react-router";
-import Products from "./Products";
-import Tech from "./Tech";
-import Clothes from "./Clothes";
 import ItemPage from "./ItemPage";
 import "../Styles/Navbar.css";
+import ProductsContainer from "../Containers/ProductsContainer";
+import TechContainer from "../Containers/TechContainer";
+import ClothesContainer from "../Containers/ClothesContainer";
 
 export class Navbar extends Component {
   render() {
@@ -137,9 +137,9 @@ export class Navbar extends Component {
         </div>
 
         <Routes>
-          <Route exact path="/" element={<Products />}></Route>
-          <Route exact path="/tech" element={<Tech />}></Route>
-          <Route exact path="/clothes" element={<Clothes />}></Route>
+          <Route exact path="/" element={<ProductsContainer />}></Route>
+          <Route exact path="/tech" element={<TechContainer />}></Route>
+          <Route exact path="/clothes" element={<ClothesContainer />}></Route>
           <Route exact path="/item" element={<ItemPage />}></Route>
         </Routes>
       </main>
