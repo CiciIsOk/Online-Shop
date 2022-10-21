@@ -1,11 +1,11 @@
 import { Component } from "react";
-import "../Styles/Item.css";
+import "../../Styles/Item.css";
 
 export class ItemPage extends Component {
   render() {
     return (
       <div className="item-wrapper">
-        <div className="item-image">image</div>
+        <div className="item-image"></div>
 
         <div className="item-info">
           <h1>Product name</h1>
@@ -20,13 +20,25 @@ export class ItemPage extends Component {
           </div>
           <h4>Product Color:</h4>
           <div style={{ display: "flex", justifyContent: "flex-start" }}>
-            <button style={{ backgroundColor: "green" }} className="chip-btn">
+            <button
+              style={{
+                border: "solid #5ECE7B 2px",
+                backgroundColor: "green",
+              }}
+              className="chip-btn"
+            >
               {" "}
             </button>
-            <button style={{ backgroundColor: "crimson" }} className="chip-btn">
+            <button
+              style={{ border: "none", backgroundColor: "crimson" }}
+              className="chip-btn"
+            >
               {" "}
             </button>
-            <button style={{ backgroundColor: "brown" }} className="chip-btn">
+            <button
+              style={{ border: "none", backgroundColor: "brown" }}
+              className="chip-btn"
+            >
               {" "}
             </button>
           </div>

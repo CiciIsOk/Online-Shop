@@ -1,0 +1,36 @@
+.container {
+    margin: 30px;
+    padding-inline: 30px;
+    padding-bottom: 30px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    border-top: #E5E5E5 solid 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.item-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+item-counter {
+    background-color: #5ECE7B;
+    display: flex;
+    justify-content: center;
+}
+
+.order{
+    border-top: #E5E5E5 solid 2px;
+    padding-top: 20px;
+}
+
+
+.order-info{
+    display: flex;
+    flex-direction: row;
+}
+

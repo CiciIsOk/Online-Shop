@@ -38,13 +38,14 @@
 }
 
 .btn{
+    text-transform: uppercase;
     background-color: #5ECE7B;
     border: none;
     color: white;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    padding: 14px 40px;
+    padding: 14px 90px;
 }
 
 .btn:hover{
