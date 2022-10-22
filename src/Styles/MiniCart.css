@@ -1,0 +1,37 @@
+.items-div{
+    font-family: Raleway;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding-bottom: 6px;
+}
+.btn-div {
+    padding-top: 8px;
+    border-top: #E5E5E5 solid 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.view-btn{
+    font-family: Raleway;
+    border: black solid 1px !important;
+    text-transform: uppercase;
+    padding-inline: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.check-out-btn{
+    background-color: #5ECE7B !important;
+    color: #fff;
+    text-transform: uppercase;
+    padding-inline: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.view-btn:hover{
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+.check-out-btn:hover{
+    background-color: #56bb71 !important;
+}

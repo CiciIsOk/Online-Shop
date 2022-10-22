@@ -48,10 +48,10 @@ export class ItemPage extends Component {
           </div>
           <button className="btn">Add To Cart</button>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-            harum soluta doloribus voluptas ipsum quidem, vero atque accusamus
-            cupiditate, at blanditiis laudantium inventore, enim aperiam sed
-            iusto nesciunt rerum. Aut?
+            Lorem ipsum dolor sit amet, consecrate radicalising elite. Fugit
+            harm solute dolorous voluptuous ipsum quid, vero antique accuseds
+            cupidity, at blandish laudanum inventory, enum param sed gusto
+            senescent rerun. Aut?
           </p>
         </div>
       </div>

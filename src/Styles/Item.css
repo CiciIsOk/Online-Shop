@@ -6,7 +6,7 @@
 }
 
 .item-image{
-    background-image: url('./image.jpeg');
+    background-image: url('Images/image.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -24,7 +24,7 @@
 }
 
 .chip-btn{
-    border: solid grey;
+    border: solid grey !important;
     padding: 15px;
     margin-inline: 10px;
     background-color: #fff;
